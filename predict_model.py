@@ -31,8 +31,3 @@ def predict_visual(file_path):
             final_result.append("TBI Detected ❌")
 
     return final_result[0], "Consult neurologist"
-
-predictions = best_model.predict(X_input)
-
-output_folder = "prediction_outputs"
-os.makedirs(output_folder, exist_ok=True)
